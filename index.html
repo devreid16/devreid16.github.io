@@ -1,243 +1,335 @@
-<!DOCTYPE>
-<html>
-	<head>
-		<title></title>
-		<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="assets/main.css">		
-	</head>
-	<body>
+<!DOCTYPE html>
+<html lang="en">
 
-		<nav class="navbar navbar-default" style="background-color: #000080;">
-  			<div class="container-fluid">
-  			 <!-- Grouping for Brand and toggle to respond to mobile device -->	
-   				 <div class="navbar-header">
-   				 	<button type="button" class="navbar-toggle-collapsed" data-toggle="collapse" 
-   				 	data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-      					  <span class="sr-only">Toggle navigation</span>
-      					  <span class="icon-bar"></span>
-       					  <span class="icon-bar"></span>
-       					  <span class="icon-bar"></span>
-    			  </button>
-   				   <a class="navbar-brand" href="#">About Git</a>
-   				 </div>
+<head>
 
-   			 <!-- Nav links, forms, and other content for toggling -->	 
-   				 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-   				 	<ul class="nav navbar-nav">
-     					<li class="dropdown">
-     					 	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-     					 	 aria-haspopup="true" aria-expanded="false">Dropdown<span class="caret"></span>Home</a>
-     						<ul class="dropdown-menu">
-     							<li><a href="#">Profile</a></li>
-     				 			<li><a data-toggle="modal" href="#msgModal">Messages</a></li>
-     				 			<li><a href="#">Docs</a></li> 
-     				 			<li role="separator" class="divider"></li>     				 			
-    		  					<li><a href="#">One more Separated Link</a></li> 
-    		  				</ul>
-    		  			</li>
-   			 		</ul>
- 				 </div><!-- /.navbar-collapse -->
- 			</div><!-- /.container-fluid -->
-		</nav>
-		
-		<div class="jumbotron">
-			<div class="container">
-				<h1>Me Learning Bootstrap</h1>
-			</div>
-		</div>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-		<div class="content">
-			<h1>Tables</h1>
-			<hr>
-			<div class="row">
-				<div class="col-md-6">
-					<table class="table table-striped">
-						<thead class="thead-inverse">
-							<th>First Name</th>
-							<th>Last Name</th>
-						</thead>
+    <title></title>
 
-						<tbody>
-							<tr>
-								<td>Angela</td>
-								<td>Reid</td>
-							</tr>
-							<tr>
-								<td>Zach</td>
-								<td>Toney</td>
-							</tr>
-							<tr>
-								<td>Sean</td>
-								<td>Lehman</td>
-							</tr>
-						</tbody>
-					</table>
-					</div>
-				</div>
-			</div>
-		</div>
+    <!-- Bootstrap Core CSS -->   
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS  main image here-->
+    <link href="css/landing-page.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand topnav" href="#">Profile</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#services">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
 
 
-		<div class="row content">
-			<h1 style="text-color: navy">3 Things About Me</h1>			
-			<hr>
-			<div class="col-sm-4">
-				<div class="thumbnail">
-					<div class="img2">
-						<a href="#" class="thumbnail">
-   					  		<img src="assets/images/mypicture.jpg" alt="...">
-   						</a>
-					</div>
-		      			<div class="caption">
-		       				 <h3>My nickname is Angie</h3>
-		     			</div>
-				</div>
-			</div>	
-			<div class="col-sm-4">
-		    	<div class="thumbnail">
-		     	 	<div class="img2">
-		     	 		<a href="#" class="thumbnail">
-   					  		<img src="assets/images/kickboxing.jpg" alt="...">
-   						</a>
-		     	 	</div>
-		    			<div class="caption">
-		      			  	<h3>I enjoy kickboxing</h3>
-		      	    	</div>
-		   		 </div>
-		  	</div>
-		  	<div class="col-sm-4">
-		    	<div class="thumbnail">
-		     	 	<div class="img2">
-		     	 		<a href="#" class="thumbnail">
-   					  		<img src="assets/images/books.png" alt="...">
-   						</a>
-		     	 	</div>
-		    			<div class="caption">
-		      			  	<h3>I like Reading</h3>
-		      	    	</div>
-		   		 </div>
-		  	</div>		  	
-		</div> 
+    <!-- Header -->
+    <a name="about"></a>
+    <div class="intro-header">
+        <div class="container">
 
-		<div class="row content">
-			<h1 style="text-color: navy">My Hopes for this Class</h1>
-			<hr>
-		  		<div class="col-sm-4">
-		  		  	<div class="thumbnail">
-		   				<div class="img1"></div>
-		      				<div class="caption">
-		      				  <h3>First hope for this class:</h3>
-		      				  	<p id="message1"></p> 
-		    				</div>
-		   			 </div>
-		 		 </div>
-		 		<div class="col-sm-4">
-		    		<div class="thumbnail">
-		      			<div class="img1"></div>
-		     				<div class="caption">
-		        				<h3>Second hope for this class:</h3>
-     						 	  <p id="message2"></p>  
-		      				</div>
-		    		</div>
-		  		</div>
-		  		<div class="col-sm-4">
-		    		<div class="thumbnail">
-		      			<div class="img1"></div>
-		      				<div class="caption">
-		       					<h3>Third hope for this class:</h3>
-     							  <p id="message3"></p>
-		   				   </div>
-		    		</div>
-		  		</div>
-	  	</div>
-	
-		<div class="row content">
-			<h1>Forms with Bootstrap</h1>
-			<hr>
-			<form>
-				<div class="col-md-4">
-					<div class="form-group">
-						<label>First Name</label>
-						<input type="name" class="form-control" placeholder="First Name">
-					</div>
-					<div class="form-group">
-						<label>Last Name</label>
-						<input type="name" class="form-control" placeholder="Last Name">
-					</div>
-					<div class="form-group">
-						<label>Email</label>
-						<input type="email" class="form-control" placeholder="Email">
-					</div>
-					<div class="form-group">
-						<label class="password">Password</label>
-						<input type="password" class="form-control" placeholder="Password">
-					</div>
-				</div>
-			</form>	
-		</div>		
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <h1>3 Things About me</h1>
+                        <h3>Me Learning Bootstrap</h3>
+                        <hr class="intro-divider">
+                        <ul class="list-inline intro-social-buttons">
+                            <li>
+                                <a href="https://devreid16.github.io" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i>
+                                 <span class="network-name">Github</span></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-		
-		<div class="row content">
-			<h1>Javascript Examples</h1>
-			</hr>
-				<div class="col-md-3 inner-message">
-					<div id="message"></div>
-				</div>
-				<div class="col-md-3 inner-message">
-					<div id="info">
-						<h1>Random Number</h1>
-							<h2></h2>
-					</div>
-				</div>
-				<div class="col-md-3 inner-message">
-					<div id="messageInABottle"></div>
-				</div>		
-		</div>		
-				
-		<div class="row content">
-			<h1 id="academyName"></h1>
-			<hr>
-			<h2 id="numStudents"></h2>
-		</div>
+        </div>
+        <!-- /.container -->
 
-		<div class="row content">
-			<h1 id="hotelName"></h1>
-			<hr>
-			<h2 id="rooms"></h2>
-		</div>
+    </div>
+    <!-- /.intro-header -->
 
-		<div class="row content">
-			<h1 id="friend1Name"></h1>
-			<hr>
-			<h2 id="years"></h2>
-		</div>
+    <!-- Page Content -->
 
-		<div class="row content">
-			<h1 id="friend2Name"></h1>
-			<hr>
-			<h2 id="year"></h2>
-		</div>
+	<a  name="services"></a>
+    <div class="content-section-a">
 
-		<div class="row content">
-			<h1 id="academyRatio"></h1>
-			<hr>
-			<h2 id="cnt"></h2>
-		</div>
+        <div class="container">
+            <div class="row">
+               <h1 style="text-color: navy">3 Things About Me</h1>          
+            <hr>
+            <div class="col-sm-4">
+                <div class="thumbnail">
+                    <div class="img2">
+                        <a href="#" class="thumbnail">
+                            <img src="assets/images/mypicture.jpg" alt="...">
+                        </a>
+                    </div>
+                        <div class="caption">
+                             <h3>My nickname is Angie</h3>
+                        </div>
+                </div>
+            </div>  
+            <div class="col-sm-4">
+                <div class="thumbnail">
+                    <div class="img2">
+                        <a href="#" class="thumbnail">
+                            <img src="assets/images/kickboxing.jpg" alt="...">
+                        </a>
+                    </div>
+                        <div class="caption">
+                            <h3>I enjoy kickboxing</h3>
+                        </div>
+                 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="thumbnail">
+                    <div class="img2">
+                        <a href="#" class="thumbnail">
+                            <img src="assets/images/books.png" alt="...">
+                        </a>
+                    </div>
+                        <div class="caption">
+                            <h3>I like Reading</h3>
+                        </div>
+                 </div>
+            </div>          
+                
+            </div>
 
-		<div class="row content">
-			<h1 id="Hotel1"></h1>
-			<hr>
-			<h2 id="rooms"></h2>
-		</div>
+        </div>
+        <!-- /.container -->
 
-		<div class="row content">
-			<h1 id="Hotel2"></h1>
-			<hr>
-			<h2 id="rooms"></h2>
-		</div>	
-	
-		<br>
-		<script type="text/javascript" src="assets/script.js"></script>						
-	</body>
+    </div>
+    <!-- /.content-section-a -->
+
+    <div class="content-section-b">
+
+        <div class="container">
+
+            <div class="row">
+                <h1 style="text-color: navy">My Hopes for this Class</h1>
+            <hr>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <div class="img1"></div>
+                            <div class="caption">
+                              <h3>First hope for this class:</h3>
+                                <p id="message1"></p> 
+                            </div>
+                     </div>
+                 </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <div class="img1"></div>
+                            <div class="caption">
+                                <h3>Second hope for this class:</h3>
+                                  <p id="message2"></p>  
+                            </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <div class="img1"></div>
+                            <div class="caption">
+                                <h3>Third hope for this class:</h3>
+                                  <p id="message3"></p>
+                           </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
+
+    <div class="content-section-a">
+
+        <div class="container">
+
+            <div class="row">
+                <h1>Forms with Bootstrap</h1>
+            <hr>
+            <form>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>First Name</label>
+                        <input type="name" class="form-control" placeholder="First Name">
+                    </div>
+                    <div class="form-group">
+                        <label>Last Name</label>
+                        <input type="name" class="form-control" placeholder="Last Name">
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label class="password">Password</label>
+                        <input type="password" class="form-control" placeholder="Password">
+                    </div>
+                </div>
+            </form> 
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+        <div class="container">
+
+            <div class="row content">
+            <h1>Javascript Examples</h1>
+            <hr>
+                <div class="col-md-3 inner-message">
+                    <div id="message"></div>
+                </div>
+                <div class="col-md-3 inner-message">
+                    <div id="info">
+                        <h1>Random Number</h1>
+                            <h2></h2>
+                    </div>
+                </div>
+                <div class="col-md-3 inner-message">
+                    <div id="messageInABottle"></div>
+                </div>      
+            </div> 
+        </div>
+
+    </div>
+    <!-- /.content-section-a -->
+
+	<a  name="contact"></a>
+    <div class="banner">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>My Project Highlights:</h2>
+                </div>
+                <div class="row">
+                    <ul class="list-inline banner-social-buttons">                        
+                        <li>
+                            <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.banner -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+            <h1 id="academyName"></h1>
+            <hr>
+            <h2 id="numStudents"></h2>
+        </div>
+
+        <div class="row content">
+            <h1 id="hotelName"></h1>
+            <hr>
+            <h2 id="rooms"></h2>
+        </div>
+
+        <div class="row content">
+            <h1 id="friend1Name"></h1>
+            <hr>
+            <h2 id="years"></h2>
+        </div>
+
+        <div class="row content">
+            <h1 id="friend2Name"></h1>
+            <hr>
+            <h2 id="year"></h2>
+        </div>
+
+        <div class="row content">
+            <h1 id="academyRatio"></h1>
+            <hr>
+            <h2 id="cnt"></h2>
+        </div>
+
+        <div class="row content">
+            <h1 id="Hotel1"></h1>
+            <hr>
+            <h2 id="rooms"></h2>
+        </div>
+
+        <div class="row content">
+            <h1 id="Hotel2"></h1>
+            <hr>
+            <h2 id="rooms"></h2>
+        </div>  
+        </div>
+    </footer>
+
+    <!--JavaScript Examples  -->
+    <br>
+        <script type="text/javascript" src="assets/script.js"></script>     
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
 </html>
-
