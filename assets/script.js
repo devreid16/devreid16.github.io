@@ -19,7 +19,7 @@ function getRandomNum() {
 	var r = document.getElementById('info');
 	var randomNum = Math.floor((Math.random() * 10) + 1);
 
-	r.innerHTML = '<h1>Random Number</h1><p><INPUT Type="button" VALUE="Get Number" onClick="history.go(0)"></p><h2>' + randomNum + '</h2>';	
+	r.innerHTML = '<h1>JS Random Number</h1><p><INPUT Type="button" VALUE="Get Number" onClick="history.go(0)"></p><h2>' + randomNum + '</h2>';	
 }
 
 // Call the function
