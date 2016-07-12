@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--
+   LANKEY Member Registration
+   Author: Angela Reid
+   Date:   2/5/16
+
+   Filename:         join.htm
+   Supporting files: logo.jpg, lankey.htm
+-->
+<title>LAN-KEY Member Registration</title>
+<link href="fscrn.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body style="color: black; margin:0">
+
+<!--
+<form name="join" id="join" action="http://www.lankey.com/cgi/mailer"
+      method="post">
+-->
+
+<!-- e-mail address of the recipient -->
+<p><input type="hidden" name="email" value="angreid@iupui.edu" /></p>
+
+<!-- Page Heading -->
+
+<p id="head"><img src="logo.jpg" alt="LAN-KEY Gaming Club" width="314" height="75" /></p>
+<p id="links">
+   <a href="lankey.html">Home</a>
+   <a href="join.htm">Join the Club</a>
+   <a href="login.htm">Member Login</a>
+   <a href="about.htm">About the Club</a>
+   <a href="office.htm">The Officers</a>
+   <a href="newltr.htm">Newsletter</a>
+   <a href="sched.htm">Events Schedule</a>
+   <a href="suggest.htm">Suggestions</a>
+   <a href="donate.htm">Donate to Club</a>
+   <a href="sponsor.htm">Our Sponsors</a>
+   <a href="memory.htm">Club Memories</a>
+   <a href="product.htm">Product Catalog</a>
+   <a href="order.htm">Order Products</a>
+   <a href="member.htm">Our Members</a>
+</p>
+
+<div id="main">
+
+<!-- Registration Heading -->
+<tr>
+   <td style="font-family: sans-serif; font-size: large; font-weight: bold"
+     colspan="2" width="100%">Member Registration</td>
+</tr>
+
+<tr>
+   <td colspan="100">
+      <hr style="color: gold; background-color: gold); height: 1" />
+   </td>
+</tr>
+
+<!-- Contact Information -->
+
+<table>
+<tr>
+   <td width="100"><label for="fname">First Name</label></td>
+   <td><input type="text" name="fname" id="fname" size="30" />
+       <label for="lname">Last Name</label>
+       <input type="text" name="lname" id="lname" size="30" />
+   </td>
+</tr>
+<tr>
+   <td><label for="address1">Address #1</label></td>
+   <td><input type="text" name="address1" id="address1" size="60" /></td>
+</tr>
+<tr>
+   <td><label for="address2">Address #2</label></td>
+   <td><input type="text" name="address2" id="address2" size="60" /></td>
+</tr>
+<tr>
+   <td><label for="city">City</label></td>
+   <td><input type="text" name="city" id="city" size="40"  />
+       <label for="state">State</label>
+       <input type="text" name="state" id="state" size="3" />
+       <label for="zip">ZIP</label>
+       <input type="text" name="zip" id="zip" size="10" maxlength="10" />
+   </td>
+</tr>
+<tr>
+   <td><label for="country">Country</label></td>
+   <td><input type="text" name="country" id="country" size="40" value="United States" /></td>
+</tr>
+</table>
+
+<tr>
+   <td colspan="2">
+      <hr style="color: black; background-color: gold; height: 1" />
+   </td>
+</tr>
+</div>
+
+<!-- Game Preference -->
+
+<div id="pref">
+<tr>
+   <td valign="top" colspan="2">
+
+  <table>
+   <tr>
+      <td width="100" valign="top" rowspan="2">
+       <label for="game">Game Choice:</label><br />
+      </td>
+      <td valign="top" rowspan="2">
+      <select name="game" id="game">
+         <option>Classic Arcade</option>
+         <option>Shooter</option>
+         <option>Dance</option>
+         <option>Role Playing</option>
+         <option>Action</option>
+      </select>
+      
+      <td valign="top">
+       <label for="fgame">Favorite Game:</label><br />
+      </td> 
+      <td valign="top">
+       <input type="text" name="fgame" id="fgame" size="20" />
+      </td>
+
+      <td width="100" valign="top" align="right">
+       <label for="major">School Major:</label><br />
+      </td>
+      <td valign="top">
+       <input type="text" name="major" id="major" size="5" /><br />
+      </td>
+   
+      <td width="100" valign="top" colspan="2">
+       <label for="newsl" align="right">Yes, I want the Newsletter!</label>
+       <input type="checkbox" name="newsl" id="newsl" value="yes" />
+      </td>
+   </tr>
+</table>
+</td>
+</tr>
+
+<tr>
+   <td colspan="2">
+      <hr style="color: black; background-color: gold; height: 1" />
+   </td>
+</tr>
+
+<!-- Email and Payment Preferences -->
+<tr>
+   <td valign="top" colspan="2">
+
+   <table><tr>
+      <td valign="top">
+      <fieldset>
+       <legend>Add my email:</legend>
+        <input type="radio" name="email" id="wemail" value="yes" />
+        <label for="wemail">Yes</label><br />
+        <input type="radio" name="email" id="nemail" value="no"
+          checked="checked"/>
+        <label for="nemail">No</label><br />
+      </fieldset>
+      </td>
+
+      <td valign="top">
+      <fieldset>
+       <legend>Payment Preference:</legend>
+        <input type="radio" name="use" id="ppal" value="yes" />
+        <label for="ppal">PayPal</label><br />
+        <input type="radio" name="use" id="event" value="no"
+          checked="checked"/>
+        <label for="event">At Event</label><br />
+      </fieldset>
+      </td>
+
+    
+     <td valign="top">
+      <label for="iuemail">Email:</label><br />
+      <input type="text" name="iuemail" id="iuemail" size="20" /><br />
+      <label for="pemail">Preferred Email:</label><br />
+      <input type="text" name="pemail" id="pemail" size="20" />
+     </td>
+    
+  </tr></table>
+   </td>
+</tr>
+<tr>
+   <td colspan="2">
+      <hr style="color: black; background-color: gold; height: 1" />
+   </td>
+</tr>
+
+<!-- HomePage URL and Suggestions -->
+
+<tr>
+   <td valign="top" colspan="2">
+
+   <table><tr>
+       <td width="100" valign="top"
+        <label for="url">HomePage:</label>
+       </td>
+       <td valign="top">
+        <textarea name="url" id="url" rows="1" cols="30"></textarea>
+       </td>
+
+        <td width="100" valign="top"
+        <label for="suggest">Suggestions?</label>
+       </td>
+       <td valign="top">
+        <textarea name="suggest" id="suggest" rows="6" cols="30"></textarea>
+       </td>
+   </tr></table>
+
+   </td>
+</tr>
+<tr>
+   <td colspan="2">
+      <hr style="color: black; background-color: gold; height: 1" />
+   </td>
+</tr>
+
+
+<!-- Buttons -->
+<tr>
+   <td valign="top" colspan="2" align="center">
+   <input type="submit" value="Send Registration" />
+   <input type="reset" value="cancel" /> 
+   </td>
+</tr>
+
+
+<!-- Address -->
+<tr style="background-color: gold">
+   <td colspan="2" align="center" valign="bottom">
+      <address style="font-family: sans-serif; font-size: 0.7em; font-style: normal">
+      LAN-KEY Gaming &#183; ElevenFifty Campus &#183; Building 123 &#183, Carmel, IN 46032&#183
+      </address>
+   </td>
+</tr>
+</table>
+</div>
+</form>
+</body>
+
+</html>
