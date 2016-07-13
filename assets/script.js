@@ -19,7 +19,7 @@ function getRandomNum() {
 	var r = document.getElementById('info');
 	var randomNum = Math.floor((Math.random() * 10) + 1);
 
-	r.innerHTML = '<h1>Random Number</h1><p><INPUT Type="button" VALUE="Get Number" onClick="history.go(0)"></p><h2>' + randomNum + '</h2>';	
+	r.innerHTML = '<h2>JS Random Number</h2><p><INPUT Type="button" VALUE="Get Number" onClick="history.go(0)"></p><h2>' + randomNum + '</h2>';	
 }
 
 // Call the function
@@ -29,7 +29,7 @@ getRandomNum();
 //get Saying length 
 var saying = '"Coding is Fun!"';
 
-var message = "<h2>JavaScript</h2><p>" + "<br>" + saying + "<br>" + "Saying length: " + saying.length + "</p>";
+var message = "<h3>JavaScript</h3><p>" + "<br>" + saying + "<br>" + "Saying length: " + saying.length + "</p>";
 
 var element = document.getElementById("messageInABottle").innerHTML = message;
 

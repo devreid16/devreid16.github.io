@@ -176,3 +176,12 @@ p.copyright {
     background-position: 20% 40%;
 
 }
+.img2 {
+    background-image: url(../img/ocean2.jpg);
+    height: 25em;
+    background-size: cover;
+    width: 100%;
+    background-position: 20% 40%;
+
+}
+
