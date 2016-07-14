@@ -27,7 +27,7 @@ getRandomNum();
 
 
 //get Saying length 
-var saying = '"Coding is Fun!"';
+var saying = '"Gives Saying length"';
 
 var message = "<h3>JavaScript</h3><p>" + "<br>" + saying + "<br>" + "Saying length: " + saying.length + "</p>";
 
