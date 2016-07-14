@@ -32,4 +32,3 @@ var saying = '"Coding is Fun!"';
 var message = "<h3>JavaScript</h3><p>" + "<br>" + saying + "<br>" + "Saying length: " + saying.length + "</p>";
 
 var element = document.getElementById("messageInABottle").innerHTML = message;
-
