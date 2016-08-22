@@ -103,7 +103,7 @@
             <div class="col-sm-4">
                        <img style="width: 50%; height: 50%; border:1px solid black;" class="img-responsive img-center" src="img/mepic.jpg" 
                          alt="Angie Photo" />
-                 </div>              
+            </div>              
                <h1 style="text-color: navy">Some Things To Know About Me</h1>          
             <hr>
             <p style="font-size: 18px;">I have been in love with the process of programming and development since creating my first "Hello World!"  
@@ -235,13 +235,13 @@
     <!--Container Example Form -->
 
     <div class="container" style="background-color: #fff1e6" >
-        
+        <a name="contact"></a>
             <div class="row content" style="background-color: #ffe4cc;">
-                <h1>Example Form with Bootstrap</h1>
-
+                <h1>Contact Form</h1>
             <hr>
             <form>
-                <div class="col-md-4">                    
+                <div class="col-md-4">
+                    <h2>Contact:</h2>                                
                     <div class="form-group">
                         <label>First Name</label>
                         <input type="name" class="form-control" placeholder="First Name">
@@ -255,8 +255,13 @@
                         <input type="email" class="form-control" placeholder="Email">
                     </div>
                     <div class="form-group">
-                        <label class="password">Password</label>
-                        <input type="password" class="form-control" placeholder="Password">
+                        <label for="form_message">Message *</label>
+                        <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" 
+                            data-error="Please,leave us a message."></textarea>
+                         <div class="help-block with-errors"></div>
+                        <div class="col-md-12">
+                         <input type="submit" class="btn btn-success btn-send" value="Send message">
+                        </div>
                     </div>
                 </div>
             </form> 
@@ -265,17 +270,16 @@
         </div>
 
     <!-- Contact Section-->
-
-	<a name="contact"></a>
+	
     <div class="banner">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
-                    <!--
+                <div class="col-lg-6"> 
+                <!--                   
                     <h2>Contact:</h2>
                     <h3 class="email-text"><a href="mailto:reidang94@gmail.com" target="_top _blank"
-                        style="text-color: #130c06;">reidang94@gmail.com</a></h3>
-                    -->
+                        style="text-color: #130c06;">reidang94@gmail.com</a></h3> 
+                -->                   
                 </div>
                 <div class="row">                    
                     <ul class="list-inline banner-social-buttons">                        
@@ -308,10 +312,12 @@
 
     <!--JavaScript Examples  -->
     <br>
-        <script type="text/javascript" src="js/script.js"></script>     
+        <script type="text/javascript" src="js/script.js"></script> 
+        <script src="validator.js"></script>
+        <script src="contact.js"></script>    
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="js/jquery.js"></script>    
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
